@@ -27,7 +27,6 @@ namespace VWA_Software_Demo
 
             try
             {
-                // Creating Context
                 var context = new CsvContext();
                 var csvFileDescreption = new CsvFileDescription
                 {

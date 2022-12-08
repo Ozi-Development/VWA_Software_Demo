@@ -99,6 +99,7 @@
     <Compile Include="Core\RelayCommand.cs" />
     <Compile Include="Core\StundenzahlWarnung.cs" />
     <Compile Include="Core\WPFEnum.cs" />
+    <Compile Include="Database\AddToCSV.cs" />
     <Compile Include="Database\Ausnahmen.cs" />
     <Compile Include="Database\Schüler.cs" />
     <Compile Include="Database\Wahlpflichtfächer.cs" />

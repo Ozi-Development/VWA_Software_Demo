@@ -27,6 +27,8 @@ namespace VWA_Software_Demo.MVVM.View
         // Ausnahmen
         private void Ausnahmen()
         {
+            int id = (App.Current as App).ID;
+
             var context = new CsvContext();
             var csvFileDescreption = new CsvFileDescription
             {
@@ -36,8 +38,6 @@ namespace VWA_Software_Demo.MVVM.View
                 UseFieldIndexForReadingData = false
             };
 
-
-            int id = (App.Current as App).ID;
 
             // Französisch
             var französisch = from Ausnahme in context.Read<Ausnahmen>("Database/Ausnahmen.csv", csvFileDescreption)
