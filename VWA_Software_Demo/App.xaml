@@ -1,0 +1,25 @@
+﻿<Application x:Class="VWA_Software_Demo.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:view="clr-namespace:VWA_Software_Demo.MVVM.View"
+             xmlns:viewModel="clr-namespace:VWA_Software_Demo.MVVM.ViewModel"
+             StartupUri="LoginWindow.xaml">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <DataTemplate DataType="{x:Type viewModel:SelectionViewModel}">
+                <view:SelectionView/>
+            </DataTemplate>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/CheckboxTheme.xaml"/>
+                <ResourceDictionary Source="Themes/TreeViewTheme.xaml"/>
+                <ResourceDictionary Source="Themes/CloseMinimizeButtonTheme.xaml"/>
+                <ResourceDictionary Source="Themes/LoginTextboxTheme.xaml"/>
+                <ResourceDictionary Source="Themes/LoginPasswordboxTheme.xaml"/>
+                <ResourceDictionary Source="Themes/LoginButtonTheme.xaml"/>
+                <ResourceDictionary Source="Themes/EinreichenButtonTheme.xaml"/>
+                <ResourceDictionary Source="Themes/TreeViewItemToolTipTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

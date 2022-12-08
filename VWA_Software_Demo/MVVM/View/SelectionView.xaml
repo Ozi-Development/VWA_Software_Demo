@@ -1,0 +1,391 @@
+﻿<UserControl x:Class="VWA_Software_Demo.MVVM.View.SelectionView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             d:Background="White">
+
+    <Grid x:Name="AllGroups">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="180"/>
+            <ColumnDefinition Width="180"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+        <!--TextBlock A-->
+        <TextBlock Text="Gruppe A"
+                   Style="{StaticResource TreeViewTextBlock}"
+                   HorizontalAlignment="Stretch"
+                   Margin="50,0,0,0">
+
+            <TextBlock.ToolTip>
+                <StackPanel>
+                    <TextBlock Text="Zusätzliche Wahlpflichtfächer" FontWeight="Bold"/>
+                    <TextBlock Text="Das sind Gegenstände, die man im Regelprogramm nicht hat. Es gibt zweijährige oder dreijährige WPF mit&#x0a;je 2 Wochenstunden, also gesamt 4 oder 6 Stunden."/>
+                </StackPanel>
+            </TextBlock.ToolTip>
+        </TextBlock>
+
+        <!--TextBlock B-->
+        <TextBlock Text="Gruppe B"
+                   Style="{StaticResource TreeViewTextBlock}" 
+                   Grid.Column="1"
+                   Grid.ColumnSpan="3" 
+                   Cursor="Arrow"
+                   HorizontalAlignment="Center">
+
+            <TextBlock.ToolTip>
+                <StackPanel>
+                    <TextBlock Text="Vertiefende Wahlpflichtfächer" FontWeight="Bold"/>
+                    <TextBlock Text="Das sind Gegenstände, die man am Vormittag als Regelfach hat und im Wahlpflichtfach vertieft, also&#x0a;eingehender behandelt werden. In der Regel sind das zweijährige WPF (6./7. Klasse bzw. 7./8. Klasse) mit je&#x0a;2 Wochenstunden, also gesamt 4 Stunden.&#x0a;&#x0a;In bestimmten Fällen ist auch ein einjähriges WPF mit 2 Wochenstunden möglich, wenn es der Erfüllung&#x0a;des Gesamtstundensolls dient. Zu wählen in der 7. oder 8. Klasse (siehe Beispiele).&#x0a;Auf jeden Fall muss man in der 6. Klasse mit den WPF beginnen."/>
+                </StackPanel>
+            </TextBlock.ToolTip>
+        </TextBlock>
+
+
+        <!--Gruppe A-->
+        <Grid Grid.Column="0"
+              HorizontalAlignment="Stretch"
+              Margin="30,0,0,0">
+
+            <TreeView>
+                <TreeViewItem Header="Spanisch"
+                              Style="{StaticResource NeueLebendeFremdspracheTheme}">
+                    <CheckBox Content="6. 7. 8. Klasse"
+                              x:Name="chkSpanisch"
+                              Checked="chkSpanisch_Checked"
+                              Unchecked="chkSpanisch_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Italienisch"
+                              Style="{StaticResource NeueLebendeFremdspracheTheme}">
+                    <CheckBox Content="6. 7. 8. Klasse"
+                              x:Name="chkItalienisch_A"
+                              Checked="chkItalienisch_A_Checked"
+                              Unchecked="chkItalienisch_A_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Französisch "
+                              Style="{StaticResource NeueLebendeFremdspracheTheme}">
+                    <CheckBox Content="6. 7. 8. Klasse"
+                              x:Name="chkFranzösisch_A"
+                              Checked="chkFranzösisch_A_Checked"
+                              Unchecked="chkFranzösisch_A_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Informatik"
+                              Style="{StaticResource InformatikTheme}">
+                    <CheckBox Content="6. 7. 8. Klasse"
+                              x:Name="chkInformatik"
+                              Checked="chkInformatik_Checked"
+                              Unchecked="chkInformatik_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Fit for Science and Technology"
+                              Style="{StaticResource FITTheme}">
+                    <CheckBox Content="6. 7. 8. Klasse"
+                              x:Name="chkFIT"
+                              Checked="chkFIT_Checked"
+                              Unchecked="chkFIT_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Sport und Bewegungskultur"
+                              Style="{StaticResource SPOKTheme}">
+                    <CheckBox Content="6. 7. 8. Klasse"
+                              x:Name="chkSPOK"
+                              Checked="chkSPOK_Checked"
+                              Unchecked="chkSPOK_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Darstellende Geometrie"
+                              Style="{StaticResource DGTheme}">
+                    <CheckBox Content="7. 8. Klasse"
+                              x:Name="chkDG"
+                              Checked="chkDG_Checked"
+                              Unchecked="chkDG_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Musik"
+                              Style="{StaticResource MusikATheme}">
+                    <CheckBox Content="7. 8. Klasse"
+                              x:Name="chkMusik"
+                              Checked="chkMusik_Checked"
+                              Unchecked="chkMusik_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Bildnerische Erziehung"
+                              Style="{StaticResource BETheme}">
+                    <CheckBox Content="7. 8. Klasse"
+                              x:Name="chkBE"
+                              Checked="chkBE_Checked"
+                              Unchecked="chkBE_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Berufsorientierung"
+                              Style="{StaticResource BOTheme}">
+                    <CheckBox Content="7. Klasse"
+                              x:Name="chkBerufsorientierung"
+                              Checked="chkBerufsorientierung_Checked"
+                              Unchecked="chkBerufsorientierung_Unchecked"/>
+                </TreeViewItem>
+            </TreeView>
+        </Grid>
+
+        <!--Gruppe B-->
+        <Grid Grid.Column="1"
+              Width="140"
+              HorizontalAlignment="Stretch">
+
+            <TreeView>
+                <TreeViewItem Header="Religion"
+                              Style="{StaticResource B_ReligionTheme}">
+                    <CheckBox Content="6. Klasse"
+                              x:Name="chkReligion_6"
+                              Checked="chkReligion_6_Checked"
+                              Unchecked="chkReligion_6_Unchecked"/>
+                    <CheckBox Content="7. Klasse"
+                              x:Name="chkReligion_7"
+                              Checked="chkReligion_7_Checked"
+                              Unchecked="chkReligion_7_Unchecked"/>
+                    <CheckBox Content="8. Klasse"
+                              x:Name="chkReligion_8"
+                              Checked="chkReligion_8_Checked"
+                              Unchecked="chkReligion_8_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Deutsch"
+                              Style="{StaticResource B_DeutschTheme}">
+                    <CheckBox Content="6. Klasse"
+                              x:Name="chkDeutsch_6"
+                              Checked="chkDeutsch_6_Checked"
+                              Unchecked="chkDeutsch_6_Unchecked"/>
+                    <CheckBox Content="7. Klasse"
+                              x:Name="chkDeutsch_7"
+                              Checked="chkDeutsch_7_Checked"
+                              Unchecked="chkDeutsch_7_Unchecked"/>
+                    <CheckBox Content="8. Klasse"
+                              x:Name="chkDeutsch_8"
+                              Checked="chkDeutsch_8_Checked"
+                              Unchecked="chkDeutsch_8_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Englisch"
+                              Style="{StaticResource B_EnglischTheme}">
+                    <CheckBox Content="6. Klasse"
+                              x:Name="chkEnglisch_6"
+                              Checked="chkEnglisch_6_Checked"
+                              Unchecked="chkEnglisch_6_Unchecked"/>
+                    <CheckBox Content="7. Klasse"
+                              x:Name="chkEnglisch_7"
+                              Checked="chkEnglisch_7_Checked"
+                              Unchecked="chkEnglisch_7_Unchecked"/>
+                    <CheckBox Content="8. Klasse"
+                              x:Name="chkEnglisch_8"
+                              Checked="chkEnglisch_8_Checked"
+                              Unchecked="chkEnglisch_8_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Französisch"
+                              Style="{StaticResource B_FranzösischTheme}">
+                    <CheckBox Content="6. Klasse"
+                              x:Name="chkFranzösisch_6"
+                              Checked="chkFranzösisch_6_Checked"
+                              Unchecked="chkFranzösisch_6_Unchecked"/>
+                    <CheckBox Content="7. Klasse"
+                              x:Name="chkFranzösisch_7"
+                              Checked="chkFranzösisch_7_Checked"
+                              Unchecked="chkFranzösisch_7_Unchecked"/>
+                    <CheckBox Content="8. Klasse"
+                              x:Name="chkFranzösisch_8"
+                              Checked="chkFranzösisch_8_Checked"
+                              Unchecked="chkFranzösisch_8_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Italienisch"
+                              Style="{StaticResource B_ItalienischTheme}">
+                    <CheckBox Content="6. Klasse"
+                              x:Name="chkItalienisch_6"
+                              Checked="chkItalienisch_6_Checked"
+                              Unchecked="chkItalienisch_6_Unchecked"/>
+                    <CheckBox Content="7. Klasse"
+                              x:Name="chkItalienisch_7"
+                              Checked="chkItalienisch_7_Checked"
+                              Unchecked="chkItalienisch_7_Unchecked"/>
+                    <CheckBox Content="8. Klasse"
+                              x:Name="chkItalienisch_8"
+                              Checked="chkItalienisch_8_Checked"
+                              Unchecked="chkItalienisch_8_Unchecked"/>
+                </TreeViewItem>
+
+            </TreeView>
+        </Grid>
+
+        <Grid Grid.Column="2"
+              HorizontalAlignment="Stretch">
+
+            <TreeView>
+                <TreeViewItem Header="Latein"
+                              Style="{StaticResource B_LateinTheme}">
+                    <CheckBox Content="6. Klasse"
+                              x:Name="chkLatein_6"
+                              Checked="chkLatein_6_Checked"
+                              Unchecked="chkLatein_6_Unchecked"/>
+                    <CheckBox Content="7. Klasse"
+                              x:Name="chkLatein_7"
+                              Checked="chkLatein_7_Checked"
+                              Unchecked="chkLatein_7_Unchecked"/>
+                    <CheckBox Content="8. Klasse"
+                              x:Name="chkLatein_8"
+                              Checked="chkLatein_8_Checked"
+                              Unchecked="chkLatein_8_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Geschichte"
+                              Style="{StaticResource B_GeschichteTheme}">
+                    <CheckBox Content="6. Klasse"
+                              x:Name="chkGeschichte_6"
+                              Checked="chkGeschichte_6_Checked"
+                              Unchecked="chkGeschichte_6_Unchecked"/>
+                    <CheckBox Content="7. Klasse"
+                              x:Name="chkGeschichte_7"
+                              Checked="chkGeschichte_7_Checked"
+                              Unchecked="chkGeschichte_7_Unchecked"/>
+                    <CheckBox Content="8. Klasse"
+                              x:Name="chkGeschichte_8"
+                              Checked="chkGeschichte_8_Checked"
+                              Unchecked="chkGeschichte_8_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Geographie"
+                              Style="{StaticResource B_GeographieTheme}">
+                    <CheckBox Content="6. Klasse"
+                              x:Name="chkGeographie_6"
+                              Checked="chkGeographie_6_Checked"
+                              Unchecked="chkGeographie_6_Unchecked"/>
+                    <CheckBox Content="7. Klasse"
+                              x:Name="chkGeographie_7"
+                              Checked="chkGeographie_7_Checked"
+                              Unchecked="chkGeographie_7_Unchecked"/>
+                    <CheckBox Content="8. Klasse"
+                              x:Name="chkGeographie_8"
+                              Checked="chkGeographie_8_Checked"
+                              Unchecked="chkGeographie_8_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Mathematik"
+                              Style="{StaticResource B_MathematikTheme}">
+                    <CheckBox Content="6. Klasse"
+                              x:Name="chkMathematik_6"
+                              Checked="chkMathematik_6_Checked"
+                              Unchecked="chkMathematik_6_Unchecked"/>
+                    <CheckBox Content="7. Klasse"
+                              x:Name="chkMathematik_7"
+                              Checked="chkMathematik_7_Checked"
+                              Unchecked="chkMathematik_7_Unchecked"/>
+                    <CheckBox Content="8. Klasse"
+                              x:Name="chkMathematik_8"
+                              Checked="chkMathematik_8_Checked"
+                              Unchecked="chkMathematik_8_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Biologie"
+                              Style="{StaticResource B_BiologieTheme}">
+                    <CheckBox Content="6. Klasse"
+                              x:Name="chkBiologie_6"
+                              Checked="chkBiologie_6_Checked"
+                              Unchecked="chkBiologie_6_Unchecked"/>
+                    <CheckBox Content="7. Klasse"
+                              x:Name="chkBiologie_7"
+                              Checked="chkBiologie_7_Checked"
+                              Unchecked="chkBiologie_7_Unchecked"/>
+                    <CheckBox Content="8. Klasse"
+                              x:Name="chkBiologie_8"
+                              Checked="chkBiologie_8_Checked"
+                              Unchecked="chkBiologie_8_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Chemie"
+                              Style="{StaticResource B_ChemieTheme}">
+                    <CheckBox Content="7. Klasse"
+                              x:Name="chkChemie_7"
+                              Checked="chkChemie_7_Checked"
+                              Unchecked="chkChemie_7_Unchecked"/>
+                    <CheckBox Content="8. Klasse"
+                              x:Name="chkChemie_8"
+                              Checked="chkChemie_8_Checked"
+                              Unchecked="chkChemie_8_Unchecked"/>
+                </TreeViewItem>
+            </TreeView>
+        </Grid>
+
+        <Grid Grid.Column="3"
+              HorizontalAlignment="Stretch">
+
+            <TreeView>
+                <TreeViewItem Header="Physik"
+                              Style="{StaticResource B_PhysikTheme}">
+                    <CheckBox Content="6. Klasse"
+                              x:Name="chkPhysik_6"
+                              Checked="chkPhysik_6_Checked"
+                              Unchecked="chkPhysik_6_Unchecked"/>
+                    <CheckBox Content="7. Klasse"
+                              x:Name="chkPhysik_7"
+                              Checked="chkPhysik_7_Checked"
+                              Unchecked="chkPhysik_7_Unchecked"/>
+                    <CheckBox Content="8. Klasse"
+                              x:Name="chkPhysik_8"
+                              Checked="chkPhysik_8_Checked"
+                              Unchecked="chkPhysik_8_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Philosophie/Psychologie"
+                              Style="{StaticResource B_PUPTheme}">
+                    <CheckBox Content="7. Klasse"
+                              x:Name="chkPhilosophiePsychologie_7"
+                              Checked="chkPhilosophiePsychologie_7_Checked"
+                              Unchecked="chkPhilosophiePsychologie_7_Unchecked"/>
+                    <CheckBox Content="8. Klasse"
+                              x:Name="chkPhilosophiePsychologie_8"
+                              Checked="chkPhilosophiePsychologie_8_Checked"
+                              Unchecked="chkPhilosophiePsychologie_8_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Musik"
+                              Style="{StaticResource B_MusikTheme}">
+                    <CheckBox Content="6. Klasse"
+                              x:Name="chkMusik_6"
+                              Checked="chkMusik_6_Checked"
+                              Unchecked="chkMusik_6_Unchecked"/>
+                    <CheckBox Content="7. Klasse"
+                              x:Name="chkMusik_7"
+                              Checked="chkMusik_7_Checked"
+                              Unchecked="chkMusik_7_Unchecked"/>
+                    <CheckBox Content="8. Klasse"
+                              x:Name="chkMusik_8"
+                              Checked="chkMusik_8_Checked"
+                              Unchecked="chkMusik_8_Unchecked"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header="Bildnerische Erziehung"
+                              Style="{StaticResource B_BETheme}">
+                    <CheckBox Content="6. Klasse"
+                              x:Name="chkBildnerischeErziehung_6"
+                              Checked="chkBildnerischeErziehung_6_Checked"
+                              Unchecked="chkBildnerischeErziehung_6_Unchecked"/>
+                    <CheckBox Content="7. Klasse"
+                              x:Name="chkBildnerischeErziehung_7"
+                              Checked="chkBildnerischeErziehung_7_Checked"
+                              Unchecked="chkBildnerischeErziehung_7_Unchecked"/>
+                    <CheckBox Content="8. Klasse"
+                              x:Name="chkBildnerischeErziehung_8"
+                              Checked="chkBildnerischeErziehung_8_Checked"
+                              Unchecked="chkBildnerischeErziehung_8_Unchecked"/>
+                </TreeViewItem>
+            </TreeView>
+        </Grid>
+    </Grid>
+</UserControl>

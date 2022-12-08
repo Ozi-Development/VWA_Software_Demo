@@ -1,0 +1,165 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--
+        Erstellt Tooltips und erbt von TreeViewItemTheme!
+    -->
+
+    <!--
+        Gruppe A
+    -->
+
+    <!--Neue, lebende Fremdsprache (Spanisch, Italienisch, Französisch)-->
+    <Style x:Key="NeueLebendeFremdspracheTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="In den 3 Jahren (6. – 8. Klasse) erlernt man die Sprache bis zur Niveaustufe A2, d.h. man kann sich dann in&#x0a;Alltagssituationen recht gut unterhalten und versteht Muttersprachler, sofern diese nicht zu schnell&#x0a;sprechen und das Thema nicht kompliziert ist.&#x0a;In dieser Sprache kann man auch mündlich maturieren. Im Unterricht geht es daher vor allem um das &#x0a;Sprechen, Hör- und Leseverstehen, weniger um das Verfassen von Texten."/>
+    </Style>
+
+    <!--Informatik-->
+    <Style x:Key="InformatikTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="In den 3 Jahren (6. bis 8. Klasse) des Wahlpflichtfaches Informatik (maturieren möglich) bekommt man&#x0a;einen Überblick über wichtige und aktuelle Informationstechnologien. Inhalte sind u.a. eine Vertiefung im&#x0a;Office-Bereich, Programmiertechniken (Windows und Web), Netzwerktechnik, Anwendungsprogramme für&#x0a;Print- und Weblayouting und aktuelle Themen wie z.B. Datenschutz und Verschlüsselungstechnologien."/>
+    </Style>
+
+
+    <!--Fit for Science and Technology-->
+    <Style x:Key="FITTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Mit dem Wahlpflichtfach Fit for Science and Technology soll eine naturwissenschaftliche und technische&#x0a;Spezialisierungsmöglichkeit für SchülerInnen bis hin zur Matura zur Verfügung gestellt werden.&#x0a;Dabei steht eine vielseitige und realitätsnahe Erarbeitung praxisbezogener Fragestellungen mit&#x0a;abwechslungsreichen Themen im Zentrum. Durch die Einbeziehung der Unterrichtsfächer Biologie, Chemie&#x0a;und Physik ist eine naturwissenschaftliche sowie technische Vielfalt gegeben. Die ausgearbeiteten&#x0a;Fragestellungen werden zum Abschluss eines jeden Semesters von den SchülerInnen in englischer Sprache&#x0a;öffentlich präsentiert.&#x0a;Die Zusammenarbeit mit einschlägigen Unternehmen soll gewährleisten, dass Experten mit Know-How bei&#x0a;den zu bearbeitenden Fragestellungen zur Seite stehen und kritische Rückmeldungen geben. Für die&#x0a;kooperierenden Unternehmen soll es darum gehen, ihren Betrieb präsentieren zu können, sowie aber auch&#x0a;Schulentwicklungen zu unterstützen die dazu führen, gut ausgebildete ArbeitnehmerInnen für die Zukunft&#x0a;gewinnen zu können."/>
+    </Style>
+
+    <!--Sportkunde-->
+    <Style x:Key="SPOKTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Im dreijährigen Wahlpflichtfach Sport und Bewegungskultur erwerben unsere Schüler und Schülerinnen&#x0a;theoretisches und praktisches Wissen rund um den menschlichen Körper im sportlichen Kontext und die&#x0a;gesellschaftlich-kulturellen Auswirkungen des Phänomens Sport."/>
+    </Style>
+
+    <!--Darstellende Geometrie-->
+    <Style x:Key="DGTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Schwerpunkt in Darstellender Geometrie ist einerseits die Theorie des Raumes und der Raumanschauung&#x0a;und andererseits die Darstellung von räumlichen Objekten aller Art, mit und ohne Computer.&#x0a;Speziell wird das Raumvorstellungsvermögen trainiert, es werden Problemstellungen an Zylinder-, Kegel&#x0a;und Kugelformen (z.B. Erdkugel) bearbeitet, Schattenbeispiele und Perspektiven gezeichnet.&#x0a;Durch den Besuch von Darstellender Geometrie wird die Studienberechtigung für alle technischen Studien erworben."/>
+    </Style>
+
+    <!--Musik-->
+    <Style x:Key="MusikATheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="In diesem Gegenstand werden die auch im Lehrplan des Pflichtgegenstandes Musikerziehung obligaten&#x0a;Bereiche Musikpraxis, Musikkunde und Musikrezeption projektartiger behandelt. Dabei stehen besonders&#x0a;das praktische Tun und die selbständige Arbeit im Vordergrund.&#x0a;Schwerpunkte sind:&#x0a;Aspekte der Musikanalyse&#x0a;Komposition, Arrangement und praktisches Musizieren und Singen&#x0a;Einsatz des Computers (v.a. Noteflight und audacity)&#x0a;Harmonielehre: Stufen- und Funktionstheorie, Harmonisieren von Melodien&#x0a;Filmmusik&#x0a;Musiktheater&#x0a;Musik als Berufsfeld, Musikkritik&#x0a;Rhythmen und Percussioninstrumente&#x0a;Reden über Musik&#x0a;Exkursionen / Konzert-(Opern-)besuche!"/>
+    </Style>
+
+    <!--Bildnerische Erziehung-->
+    <Style x:Key="BETheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Kennenlernen europäischer Stilepochen, Auseinandersetzung in theoretischer und praktischer Weise mit&#x0a;den Bildgattungen bzw. Techniken, Bildanalysen/Interpretation von Kunstwerken."/>
+    </Style>
+
+    <!--Berufsorientierung-->
+    <Style x:Key="BOTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Die Schülerinnen und Schüler sollen eine praxisnahe Einführung in die Ausbildungsmöglichkeiten nach der&#x0a;Matura sowie in die Berufs- und Arbeitswelt bekommen.&#x0a;Der Unterricht wird durch Lehrausgänge zu den verschiedenen Ausbildungsstätten, Kontakte zu Lehrenden&#x0a;und Studenten sowie durch Vorträge von Experten in der Schule ergänzt.&#x0a;Das Ziel dieses Wahlpflichtfaches besteht im Bewusstmachen der eigenen Interessen und Stärken und im&#x0a;Aufzeigen eines möglichen zukünftigen Ausbildungs- bzw. Berufsweges."/>
+    </Style>
+
+
+
+
+    <!--   
+        Gruppe B    
+    -->
+
+    <Style x:Key="B_ReligionTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Hier bietet sich die Möglichkeit, den großen Bereich von Religionen und Weltanschauungen je nach&#x0a;Interesse der SchülerInnen zu vertiefen. Die Auseinandersetzung soll zu eigener Reflexion anregen und zu&#x0a;verantwortungsbewusstem Handeln führen.&#x0a;Besonderes Augenmerk sollen dabei die unterschiedlichen Blickwinkel auf die Themenbereiche Religion&#x0a;und Glaube bekommen.&#x0a;Vergleichende ReligionswissenschaftEthik und Moral, Religionsphilosophie, Religionspsychologie,&#x0a;Soziologischer Blick auf Religionen, Religionsgeschichte, Religion und Medizin/Gesundheit, Religion und&#x0a;Wissenschaft u.ä.&#x0a;Daneben sollen auch aktuelle Fragen zur Kirche, ethische Fragen der Gegenwart bis hin zu Radikalisierung&#x0a;von Religionsgruppen zur Sprache kommen. Lehrausgänge und Vorträge sollen das gemeinsame Erarbeiten&#x0a;der Inhalte ergänzen."/>
+    </Style>
+
+    <Style x:Key="B_DeutschTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Das Wahlpflichtfach Deutsch bietet einen Einblick in die Welt der Sprache über den Deutschunterricht&#x0a;hinaus. Hier finden sich Vertiefungen, die im Regelunterricht keinen Platz finden.&#x0a;Dazu gehören etwa ein Fokus auf die Analyse von Filmen und Serien, die vertiefte Auseinandersetzung mit&#x0a;gegenwärtiger Literatur, die näher an der Lebenswelt der SchülerInnen liegt und weiterführende Techniken&#x0a;des kreativen und wissenschaftlichen Schreibens.&#x0a;Schwerpunkte innerhalb dieser Themenbereiche können von der Wahlpflichtfachgruppe gemeinsam&#x0a;festgelegt werden, um den Interessen der Schülerinnen und Schüler entgegenzukommen."/>
+    </Style>
+
+    <Style x:Key="B_EnglischTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Im Wahlpflichtfach Englisch werden aus dem Regelunterricht bekannte Themen vertieft sowie neue&#x0a;Themen erarbeitet. Die Schülerinnen und Schüler werden in die Auswahl der Themen und&#x0a;Kursschwerpunkte miteinbezogen, sodass die Interessen jeder Gruppe berücksichtigt werden können.&#x0a;Einige Beispiele für Kursschwerpunkte sind: vertiefende Kulturkunde (Geschichte, Kultur und Lebensweise&#x0a;englischsprachiger Länder), Shakespeare und das Theater seiner Zeit, Filmbesprechungen und – vergleiche,&#x0a;Lektüre und Diskussion englischsprachiger Literatur.&#x0a;Besonderes Augenmerk liegt auf der Verbesserung der mündlichen Kommunikation sowie des Hör – und&#x0a;Leseverstehens; das Verfassen von Texten ist weniger wichtig. Projektarbeit und Referate werden in den&#x0a;Kursen üblicherweise verlangt."/>
+    </Style>
+
+    <Style x:Key="B_FranzösischTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Im Wahlpflichtfach Französisch vertiefend werden vorwiegend Themenbereiche aus dem&#x0a;Themenkorb der Oberstufe gewählt und diese dann vertiefend bzw. erweiternd behandelt, wobei sowohl&#x0a;Texte, Filme, Bücher, als auch Videomaterial zum Einsatz kommen. Da die Themenwahl auch in Absprache&#x0a;mit den Schülerinnen und Schülern erfolgt, werden deren Interessen berücksichtigt und es können&#x0a;landeskundliche, geschichtliche und literarische Bereiche, aber auch aktuelle Ereignisse behandelt werden.&#x0a;Der Schwerpunkt liegt im gemeinsamen Erarbeiten der Themen, im Sprechen und im Diskutieren auf&#x0a;Niveau B1."/>
+    </Style>
+
+    <Style x:Key="B_ItalienischTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Im Wahlpflichtfach Italienisch vertiefend werden vorwiegend Themenbereiche aus dem&#x0a;Themenkorb der Oberstufe gewählt und diese dann vertiefend bzw. erweiternd behandelt, wobei sowohl&#x0a;Texte, Filme, Bücher, als auch Videomaterial zum Einsatz kommen. Da die Themenwahl auch in Absprache&#x0a;mit den Schülerinnen und Schülern erfolgt, werden deren Interessen berücksichtigt und es können&#x0a;landeskundliche, geschichtliche und literarische Bereiche, aber auch aktuelle Ereignisse behandelt werden.&#x0a;Der Schwerpunkt liegt im gemeinsamen Erarbeiten der Themen, im Sprechen und im Diskutieren auf&#x0a;Niveau B1."/>
+    </Style>
+
+    <Style x:Key="B_LateinTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Im Wahlpflichtfach Latein können sowohl Teilaspekte der Pflichtmodule vertieft und/ oder erweitert als&#x0a;auch neue Themen behandelt werden, wie zum Beispiel &quot;Der Umgang mit fremden Kulturen&quot;, &quot;Kindsein in&#x0a;Rom&quot;, Römisch kochen&quot; u.a.m. Bei der Auswahl der Themen wird auf Schülerinteresse und&#x0a;Projektorientierung geachtet; es könnten also durchaus auch Filme wie &quot;Troja&quot; oder &quot;Der Gladiator&quot;&#x0a;behandelt und mit den Originaltexten verglichen werden."/>
+    </Style>
+
+    <Style x:Key="B_GeschichteTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Das Wahlpflichtfach Geschichte und Politische Bildung bietet die Möglichkeit zusätzlich zum&#x0a;Regelunterricht vertiefende Arbeitsmethoden anzuwenden. Hier kann man verstärkt historische&#x0a;Kompetenzen erlernen (Quellenarbeit, Meinungsbildung, Meinung artikulieren).&#x0a;Wichtig für die politische Bildung eines jungen Menschen ist es, das politische Geschehen mit sich selbst in&#x0a;Verbindung zu bringen sowie Respekt und Anerkennung anderer Sichtweisen zu erkennen. Der Unterricht&#x0a;wird prozessorientiert und reflektierend, d.h. in Kleingruppen, Exkursionen, Workshops und Diskussionen&#x0a;gestaltet:&#x0a;Recherchieren – referieren – diskutieren (zu aktuellen Themen: z.b.Migration, Naher Osten, Wahlen, etc.),&#x0a;Erstellen von Längsschnitten (Rechte von Frauen, Kindern, etc; Staatenbildungen, Demokratie), Oral&#x0a;History – Feldforschung (Interviews, Auswertung von Statistiken und Fragebögen), Filme interpretieren&#x0a;(Dokumentation, historischer Spielfilm, in Spielfilmen histor. Wahrheiten erkennen), Lesen und analysieren&#x0a;von politischen Artikeln (Standpunkte klar definieren – persönliche Stellungnahme&#x0a;"/>
+    </Style>
+
+    <Style x:Key="B_GeographieTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Die SchülerInnen sollen in der Lage sein vertiefende geografische und wirtschaftliche Informationen&#x0a;computerunterstützt zu sammeln, auszuwerten und zu interpretieren.&#x0a;Es sollen komplexe wirtschaftliche, politische und natürliche Zusammenhänge erkannt werden, zu denen&#x0a;die SchülerInnen in weiterer Folge auch persönlich fundiert Stellung nehmen können. Die SchülerInnen&#x0a;sollen dazu motiviert werden sich persönlich mit lokalen, regionalen und globalen Fragestellungen&#x0a;auseinanderzusetzen. Ein weiterer wichtiger Punkt in diesem Zusammenhang ist auch, dass die&#x0a;SchülerInnen einen aktuellen Überblick über die modernen Methoden der Geografie erhalten und&#x0a;praxisnah Feldforschung betreiben können.&#x0a;Die einzelnen Themen werden zu Beginn gemeinsam mit den SchülerInnen und LehrerInnen besprochen&#x0a;und ausgewählt. Es wird darauf geachtet, dass die Themen ausgewogen, aktuell und praxisbezogen sind:&#x0a;Physische Geografie (Wetter und Klima, Gesicht der Erde), Humangeografie (Welternährung, Weltmeere&#x0a;und Küstenregionen, Raumordnungsprobleme, Räumliche Mobilität, Arbeitsmarktprobleme, Stadt,&#x0a;Vergleichende Länderkunde), Wirtschaftsgeografie (Geographische und wirtschaftliche Medien und&#x0a;Arbeitsweisen, Standortfaktoren, Konjunkturentwicklung und Strukturwandel, Volkswirtschaftliche&#x0a;Aspekte), Praxis: Moderne Methoden der Geografie&#x0a;Geocaching, Feldforschungen (Exkursionen), Vermessung, Digitale Kartografie, Erstellen und Auswerten von&#x0a;Fragebogen"/>
+    </Style>
+
+    <Style x:Key="B_MathematikTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Das Ziel des Wahlpflichtfachs ist, den Schülerinnen und Schülern gemäß ihren Interessen und ihren&#x0a;Wünschen eine Erweiterung bzw. Vertiefung ihres Bildungshorizontes zu bieten. Die Schülerinnen und&#x0a;Schüler sollen mit Anleitung der Lehrperson vor allem im Bereich der anwendungsorientierten Mathematik&#x0a;selbsttätig mathematische Fragestellungen analysieren und gegebenenfalls lösen lernen. Voraussetzungen:&#x0a;Interesse/Freude an der Mathematik, Grundkenntnisse&#x0a;Es seien hier nur einige mögliche Themenbereiche angeführt:&#x0a;Erweiterung des Zahlenbegriffs (Zahlentheorie); Theorien zum Unendlichen;&#x0a;Folgen und Reihen: Monotonie, Grenzwerte, Konvergenz,&#x0a;Kunst (M.C.Escher), Goldener Schnitt;&#x0a;Beweismethoden in der Mathematik und der Geometrie kennenlernen;&#x0a;Lineare Optimierung: beste Ausnützung, minimale Kosten, Wirtschaftsmathematik;&#x0a;Parameterdarstellung von Kurven: Radlinien, Spiralen, ... graphisch und rechnerisch.&#x0a;Kegelschnitte: Ellipse, Parabel, Hyperbel;&#x0a;Differentialgleichungen; Matrizen; Erstellen und statistische Auswertung von Fragebögen;"/>
+    </Style>
+
+    <Style x:Key="B_BiologieTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Mit dem Besuch des Biologie Wahlpflichtfaches erhalten die SchülerInnen viele Möglichkeiten ihr Wissen in&#x0a;vielen Bereichen der Humanbiologie, Zoologie, Botanik, Ökologie und Mikrobiologie zu vertiefen. Darüber&#x0a;hinaus werden auch Themenbereiche behandelt, die im Regelunterricht keinen Platz haben (wie z.B.&#x0a;Psychosomatik oder Natur- und Artenschutz)&#x0a;Im Unterricht wird viel Augenmerk auf praktisches Arbeiten gelegt – wo möglich werden Experimente und&#x0a;praktische Arbeiten durchgeführt, die im Regelunterricht nicht möglich wären. Somit können die&#x0a;SchülerInnen diverse Techniken und wissenschaftliche Arbeitsmethoden kennenlernen. Zudem besteht die&#x0a;Möglichkeit Lehrausgänge zu unternehmen, die nur in Kleingruppen möglich sind (z.B. der Besuch von&#x0a;speziellen Programmen der Universität Graz). Es werden auch aktuelle Themen aufgearbeitet und es kann&#x0a;auf spezielle Interessen der Schüler eingegangen werden.&#x0a;Viel Wert wird auch auf schülerzentriertes Arbeiten gelegt – viele Themenbereiche werden von den&#x0a;Schülern selbstständig erarbeitet, wodurch Kompetenzen wie Teamfähigkeit, Organisation und Planung von&#x0a;Projekten und deren Präsentation gefördert werden. Zu guter Letzt ist das WPF Biologie eine gute&#x0a;Vorbereitung für das Studium in allen naturwissenschaftlichen Bereichen."/>
+    </Style>
+
+    <Style x:Key="B_ChemieTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Ausgewählte, themenorientierte Kapitel der Chemie mit dem Schwerpunkt, Experimente selbst&#x0a;durchzuführen und auszuwerten. Mögliche Themenbereiche sind beispielsweise: Forensische Chemie;&#x0a;Chemagie; Chemie beim Kochen, Braten, Backen; Chemie im Auto; Chemie der Kunststoffe; Elektrochemie;&#x0a;Farbstoffe; Sprengstoffe; Chemie und Umwelt. Auf inhaltliche Wünsche der TeilnehmerInnen kann&#x0a;selbstverständlich eingegangen werden."/>
+    </Style>
+
+    <Style x:Key="B_PhysikTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Das Wahlpflichtfach Physik soll die exakte physikalische Begriffsbildung fördern mit dem Ziel, in einer dem&#x0a;Gegenstand angepassten Sprache kommunizieren zu können. Im Mittelpunkt steht das Erkennen der&#x0a;zentralen Rolle des Experiments in der Physik ausgehend von möglichst vielen kompetenzorientierten&#x0a;Lehrer- und Schülerversuchen. Mit dem Nachbereiten dieser Versuche in Form von Protokollen wird die&#x0a;Fähigkeit trainiert, einfache Versuche zu planen, auszuführen und auszuwerten, um die Nachvollziehbarkeit&#x0a;eines Experiments zu gewährleisten. Damit verbunden ist das eigenständige Erarbeiten der Problematik des&#x0a;Messens, der Messungenauigkeiten und der Fehlerrechnung. Außerdem soll die Fähigkeit erworben&#x0a;werden, naturwissenschaftliche Berichte und Meldungen der Medien zu verstehen. Die SchülerInnen sollen&#x0a;zum kritischen und skeptischen Denken angeregt werden, um ein Gespür dafür zu bekommen, was&#x0a;Wissenschaft ausmacht."/>
+    </Style>
+
+    <Style x:Key="B_PUPTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Dieses Wahlpflichtfach vertieft und erweitert den Stoff der 7. und 8.Klasse aus dem Fach PUP und soll zu&#x0a;eigenständigem Arbeiten und Denken anregen.&#x0a;Die Themen reichen von der Werbe- bis zur Kriminalpsychologie, Analyse von psychischen Störungen und&#x0a;deren Behandlungsmöglichkeiten oder Neuropsychologie (7. Klasse) bis hin zu philosophischen&#x0a;Betrachtungen über die Zeit, Ideologiekritik sowie Überlegungen zum freien Willen (8. Klasse).&#x0a;Die Themen werden am Beginn des Schuljahres gemeinsam mit dem Lehrer festgelegt.&#x0a;Lehrausgänge und Expertengespräche runden dieses Wahlpflichtfach ab."/>
+    </Style>
+
+    <Style x:Key="B_MusikTheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Teile des bereits im Pflichtfach durchgenommenen Stoffes in den Bereichen Musikpraxis, Musikkunde und&#x0a;Musikrezeption werden genauer behandelt sowie neue Stoffgebiete erschlossen. Besonderes Augenmerk&#x0a;wird dabei auf die aktive Mitarbeit der SchülerInnen gelegt.&#x0a;Obwohl der Lehrstoff auf die Bedürfnisse der SchülerInnen abgestimmt wird, werden u.a. folgende Punkte&#x0a;behandelt werden:&#x0a;Gehörbildung: Durch Übungen soll das Gehör der SchülerInnen geschult werden (Intervalle erkennen,&#x0a;Melodien transskribieren,…).&#x0a;Kompositionstechnische Grundlagen sollen von den SchülerInnen praktisch erprobt werden (Generalbass,&#x0a;Stimmführungsregeln, Jazzharmonielehre, Arrangieren/ Komponieren von kleinen Stücken,…).&#x0a;SchülerInnen mit instrumentalen Vorkenntnissen sollen die Möglichkeit erhalten diese auch in den&#x0a;Unterricht einzubringen (aktives Musizieren in verschiedenen Stilen; Improvisation,…).&#x0a;Die SchülerInnen eignen sich elementare Spieltechniken verschiedener Instrumente an (v.a. PercussionInstrumente).&#x0a;Werkanalysen: SchülerInnen lernen Werke berühmter Komponisten selbstständig zu analysieren.&#x0a;Einsatz des Computers (v.a. Noteflight und audacity)&#x0a;Popularmusikalische Themen (z.B. Songwriting, Musicals usw.) erhalten im Wahlpflichtfach mehr Raum als&#x0a;im Pflichtfach Musik. Im Vordergrund stehen das Kennenlernen der europäischen Musikkultur (fallweise&#x0a;mit Exkursionen und Konzert-/Opernbesuchen) und damit auch die Vorbereitung auf die mündliche MusikMatura."/>
+    </Style>
+
+    <Style x:Key="B_BETheme"
+           TargetType="{x:Type TreeViewItem}"
+           BasedOn="{StaticResource TreeViewItemTheme}">
+        <Setter Property="ToolTip" Value="Auf dem Pflichtfach BE aufbauend ist es ein Vertiefen von Wissen und Fertigkeiten.&#x0a;Auseinandersetzung mit einem Thema über einen längeren Zeitraum, Kennenlernen von&#x0a;Künstlerpersönlichkeiten und ihrem Werk, Reflexion vor dem Original (Ausstellungsbesuche), Kunst im&#x0a;öffentlichen Raum, Stellenwert von Kunst in der Gesellschaft."/>
+    </Style>
+</ResourceDictionary>
