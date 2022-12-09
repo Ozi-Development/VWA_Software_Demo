@@ -36,7 +36,7 @@ namespace VWA_Software_Demo
                     UseFieldIndexForReadingData = false
                 };
 
-                var checkSchüler = from Schüler in context.Read<Schüler>("Database/Schüler.csv", csvFileDescreption)
+                var checkSchüler = from Schüler in context.Read<Schüler>(@"Schüler.csv", csvFileDescreption)
                                    where Schüler.Vorname == vorname &&
                                          Schüler.Nachname == nachname &&
                                          Schüler.Passwort == passwort
@@ -48,11 +48,11 @@ namespace VWA_Software_Demo
                     int id = checkSchüler.First();
                     (App.Current as App).ID = id;
 
-                    var checkIfNull = from Wpf in context.Read<Wahlpflichtfächer>("Database/Wahlpflichtfächer.csv", csvFileDescreption)
+                    var checkIfNull = from Wpf in context.Read<Wahlpflichtfächer>("Wahlpflichtfächer.csv", csvFileDescreption)
                                       where Wpf.Schüler == id
                                       select Wpf.Wahlpflichtfach_1;
 
-                    if (checkIfNull.First() != null)
+                    if (checkIfNull.FirstOrDefault() != null)
                     {
                         if (MessageBox.Show("Du hast deine Wahlpflichtfächer bereits gewählt! Bist du sicher, dass du fortfahren möchtest? Die bereits gewählten Wahlpflichtfächer werden dann überschrieben!",
                                             "Warnung", MessageBoxButton.YesNo, MessageBoxImage.Information) == MessageBoxResult.No)

@@ -37,7 +37,7 @@ namespace VWA_Software_Demo
                 int id = (App.Current as App).ID;
                 int listCount = list.Count;
 
-                string fileDirection = @"Database/Wahlpflichtfächer.csv";
+                string fileDirection = @"Wahlpflichtfächer.csv";
                 var context = new CsvContext();
                 var csvFileDescreption = new CsvFileDescription
                 {

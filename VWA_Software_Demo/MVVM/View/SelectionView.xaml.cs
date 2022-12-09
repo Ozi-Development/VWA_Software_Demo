@@ -40,10 +40,11 @@ namespace VWA_Software_Demo.MVVM.View
 
 
             // Französisch
-            var französisch = from Ausnahme in context.Read<Ausnahmen>("Database/Ausnahmen.csv", csvFileDescreption)
-                              where Ausnahme.Schüler == id &&
+            var französisch = from Ausnahme in context.Read<Ausnahmen>("Ausnahmen.csv", csvFileDescreption)
+                              where Ausnahme.PK_AusnahmeID == id &&
                                     Ausnahme.Französisch_Pflichtfach == true
-                              select Ausnahme;
+                              select Ausnahme.PK_AusnahmeID;
+
 
             if (französisch.Any())
             {
@@ -58,10 +59,10 @@ namespace VWA_Software_Demo.MVVM.View
 
 
             // Italienisch
-            var italienisch = from Ausnahme in context.Read<Ausnahmen>("Database/Ausnahmen.csv", csvFileDescreption)
-                              where Ausnahme.Schüler == id &&
+            var italienisch = from Ausnahme in context.Read<Ausnahmen>("Ausnahmen.csv", csvFileDescreption)
+                              where Ausnahme.PK_AusnahmeID == id &&
                                     Ausnahme.Italienisch_Pflichtfach == true
-                              select Ausnahme;
+                              select Ausnahme.PK_AusnahmeID;
 
             if (italienisch.Any())
             {
@@ -76,10 +77,10 @@ namespace VWA_Software_Demo.MVVM.View
 
 
             // Latein
-            var latein = from Ausnahme in context.Read<Ausnahmen>("Database/Ausnahmen.csv", csvFileDescreption)
-                         where Ausnahme.Schüler == id &&
+            var latein = from Ausnahme in context.Read<Ausnahmen>("Ausnahmen.csv", csvFileDescreption)
+                         where Ausnahme.PK_AusnahmeID == id &&
                                Ausnahme.Latein_Pflichtfach == false
-                         select Ausnahme;
+                         select Ausnahme.PK_AusnahmeID;
 
             if (latein.Any())
             {
@@ -90,10 +91,10 @@ namespace VWA_Software_Demo.MVVM.View
 
 
             // Bildnerische Erziehung + Musik (May be deleted)
-            var be = from Ausnahme in context.Read<Ausnahmen>("Database/Ausnahmen.csv", csvFileDescreption)
-                     where Ausnahme.Schüler == id &&
+            var be = from Ausnahme in context.Read<Ausnahmen>("Ausnahmen.csv", csvFileDescreption)
+                     where Ausnahme.PK_AusnahmeID == id &&
                            Ausnahme.BE_Pflichtfach == true
-                     select Ausnahme.Schüler;
+                     select Ausnahme.PK_AusnahmeID;
 
             if (be.Any())
             {
@@ -112,10 +113,10 @@ namespace VWA_Software_Demo.MVVM.View
 
 
             // Religion
-            var religion = from Ausnahme in context.Read<Ausnahmen>("Database/Ausnahmen.csv", csvFileDescreption)
-                           where Ausnahme.Schüler == id &&
+            var religion = from Ausnahme in context.Read<Ausnahmen>("Ausnahmen.csv", csvFileDescreption)
+                           where Ausnahme.PK_AusnahmeID == id &&
                                  Ausnahme.Religion_Pflichtfach == false
-                           select Ausnahme.Schüler;
+                           select Ausnahme.PK_AusnahmeID;
 
             if (religion.Any())
             {
@@ -126,10 +127,10 @@ namespace VWA_Software_Demo.MVVM.View
 
 
             // Gymnasium
-            var gymnasium = from Ausnahme in context.Read<Ausnahmen>("Database/Ausnahmen.csv", csvFileDescreption)
-                            where Ausnahme.Schüler == id &&
+            var gymnasium = from Ausnahme in context.Read<Ausnahmen>("Ausnahmen.csv", csvFileDescreption)
+                            where Ausnahme.PK_AusnahmeID == id &&
                                   Ausnahme.Gymnasium == false
-                            select Ausnahme.Schüler;
+                            select Ausnahme.PK_AusnahmeID;
 
             if (gymnasium.Any())
             {

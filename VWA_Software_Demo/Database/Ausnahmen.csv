@@ -1,3 +1,6 @@
 
 PK_AusnahmeID,Schüler,Gymnasium,Französisch_Pflichtfach,Italienisch_Pflichtfach,Latein_Pflichtfach,BE_Pflichtfach,Religion_Pflichtfach
 1,1,False,False,True,False,True,False
+2,2,True,False,True,True,True,True
+3,3,True,True,False,True,False,False
+4,4,False,False,True,False,True,True
