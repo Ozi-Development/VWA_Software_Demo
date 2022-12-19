@@ -62,8 +62,7 @@
                      HorizontalAlignment="Center"
                      Grid.Row="1"
                      Style="{StaticResource LoginTextboxVornameTheme}"
-                     x:Name="tbVorname"
-                     Text="Elias"/>
+                     x:Name="tbVorname"/>
 
             <TextBox Width="200"
                      Height="40"
@@ -72,8 +71,7 @@
                      Grid.Row="1"
                      Style="{StaticResource LoginTextboxNachnameTheme}"
                      x:Name="tbNachname"
-                     Margin="0,10,0,10"
-                     Text="Valentek"/>
+                     Margin="0,10,0,10"/>
 
             <Grid>
                 <Border CornerRadius="10"
@@ -86,7 +84,7 @@
                                  Padding="5"
                                  Foreground="DarkGray"
                                  x:Name="pwbPasswordBox"
-                                 Password="AhBKdD">
+                                 Password="Passwort">
                     </PasswordBox>
                 </Border>
             </Grid>
