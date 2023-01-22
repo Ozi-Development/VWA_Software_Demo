@@ -4,7 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800"
+             d:DesignHeight="600" d:DesignWidth="900"
              d:Background="White">
 
     <Grid x:Name="AllGroups">
@@ -54,6 +54,7 @@
 
             <TreeView>
                 <TreeViewItem Header="Spanisch"
+                              IsExpanded="True"
                               Style="{StaticResource NeueLebendeFremdspracheTheme}">
                     <CheckBox Content="6. 7. 8. Klasse"
                               x:Name="chkSpanisch"
@@ -62,6 +63,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Italienisch"
+                              IsExpanded="True"
                               Style="{StaticResource NeueLebendeFremdspracheTheme}">
                     <CheckBox Content="6. 7. 8. Klasse"
                               x:Name="chkItalienisch_A"
@@ -70,6 +72,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Französisch "
+                              IsExpanded="True"
                               Style="{StaticResource NeueLebendeFremdspracheTheme}">
                     <CheckBox Content="6. 7. 8. Klasse"
                               x:Name="chkFranzösisch_A"
@@ -78,6 +81,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Informatik"
+                              IsExpanded="True"
                               Style="{StaticResource InformatikTheme}">
                     <CheckBox Content="6. 7. 8. Klasse"
                               x:Name="chkInformatik"
@@ -86,6 +90,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Fit for Science and Technology"
+                              IsExpanded="True"
                               Style="{StaticResource FITTheme}">
                     <CheckBox Content="6. 7. 8. Klasse"
                               x:Name="chkFIT"
@@ -94,6 +99,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Sport und Bewegungskultur"
+                              IsExpanded="True"
                               Style="{StaticResource SPOKTheme}">
                     <CheckBox Content="6. 7. 8. Klasse"
                               x:Name="chkSPOK"
@@ -102,6 +108,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Darstellende Geometrie"
+                              IsExpanded="True"
                               Style="{StaticResource DGTheme}">
                     <CheckBox Content="7. 8. Klasse"
                               x:Name="chkDG"
@@ -110,6 +117,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Musik"
+                              IsExpanded="True"
                               Style="{StaticResource MusikATheme}">
                     <CheckBox Content="7. 8. Klasse"
                               x:Name="chkMusik"
@@ -118,6 +126,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Bildnerische Erziehung"
+                              IsExpanded="True"
                               Style="{StaticResource BETheme}">
                     <CheckBox Content="7. 8. Klasse"
                               x:Name="chkBE"
@@ -126,6 +135,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Berufsorientierung"
+                              IsExpanded="True"
                               Style="{StaticResource BOTheme}">
                     <CheckBox Content="7. Klasse"
                               x:Name="chkBerufsorientierung"
@@ -142,6 +152,7 @@
 
             <TreeView>
                 <TreeViewItem Header="Religion"
+                              IsExpanded="True"
                               Style="{StaticResource B_ReligionTheme}">
                     <CheckBox Content="6. Klasse"
                               x:Name="chkReligion_6"
@@ -158,6 +169,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Deutsch"
+                              IsExpanded="True"
                               Style="{StaticResource B_DeutschTheme}">
                     <CheckBox Content="6. Klasse"
                               x:Name="chkDeutsch_6"
@@ -174,6 +186,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Englisch"
+                              IsExpanded="True"
                               Style="{StaticResource B_EnglischTheme}">
                     <CheckBox Content="6. Klasse"
                               x:Name="chkEnglisch_6"
@@ -190,6 +203,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Französisch"
+                              IsExpanded="True"
                               Style="{StaticResource B_FranzösischTheme}">
                     <CheckBox Content="6. Klasse"
                               x:Name="chkFranzösisch_6"
@@ -206,6 +220,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Italienisch"
+                              IsExpanded="True"
                               Style="{StaticResource B_ItalienischTheme}">
                     <CheckBox Content="6. Klasse"
                               x:Name="chkItalienisch_6"
@@ -229,6 +244,7 @@
 
             <TreeView>
                 <TreeViewItem Header="Latein"
+                              IsExpanded="True"
                               Style="{StaticResource B_LateinTheme}">
                     <CheckBox Content="6. Klasse"
                               x:Name="chkLatein_6"
@@ -245,6 +261,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Geschichte"
+                              IsExpanded="True"
                               Style="{StaticResource B_GeschichteTheme}">
                     <CheckBox Content="6. Klasse"
                               x:Name="chkGeschichte_6"
@@ -261,6 +278,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Geographie"
+                              IsExpanded="True"
                               Style="{StaticResource B_GeographieTheme}">
                     <CheckBox Content="6. Klasse"
                               x:Name="chkGeographie_6"
@@ -277,6 +295,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Mathematik"
+                              IsExpanded="True"
                               Style="{StaticResource B_MathematikTheme}">
                     <CheckBox Content="6. Klasse"
                               x:Name="chkMathematik_6"
@@ -293,6 +312,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Biologie"
+                              IsExpanded="True"
                               Style="{StaticResource B_BiologieTheme}">
                     <CheckBox Content="6. Klasse"
                               x:Name="chkBiologie_6"
@@ -309,6 +329,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Chemie"
+                              IsExpanded="True"
                               Style="{StaticResource B_ChemieTheme}">
                     <CheckBox Content="7. Klasse"
                               x:Name="chkChemie_7"
@@ -327,6 +348,7 @@
 
             <TreeView>
                 <TreeViewItem Header="Physik"
+                              IsExpanded="True"
                               Style="{StaticResource B_PhysikTheme}">
                     <CheckBox Content="6. Klasse"
                               x:Name="chkPhysik_6"
@@ -343,6 +365,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Philosophie/Psychologie"
+                              IsExpanded="True"
                               Style="{StaticResource B_PUPTheme}">
                     <CheckBox Content="7. Klasse"
                               x:Name="chkPhilosophiePsychologie_7"
@@ -355,6 +378,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Musik"
+                              IsExpanded="True"
                               Style="{StaticResource B_MusikTheme}">
                     <CheckBox Content="6. Klasse"
                               x:Name="chkMusik_6"
@@ -371,6 +395,7 @@
                 </TreeViewItem>
 
                 <TreeViewItem Header="Bildnerische Erziehung"
+                              IsExpanded="True"
                               Style="{StaticResource B_BETheme}">
                     <CheckBox Content="6. Klasse"
                               x:Name="chkBildnerischeErziehung_6"
