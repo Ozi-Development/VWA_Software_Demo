@@ -139,10 +139,10 @@ namespace VWA_Software_Demo
                         Mouse.OverrideCursor = Cursors.Arrow;
                         return;
                 }
-            }
             MessageBox.Show("Deine Wahlpflichtfächer wurden erfolgreich eingereicht!",
                             "Erfolgreich eingereicht", MessageBoxButton.OK, MessageBoxImage.Information);
             Mouse.OverrideCursor = Cursors.Arrow;
+            }
         }
 
 
